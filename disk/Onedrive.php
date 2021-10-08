@@ -9,7 +9,7 @@ class Onedrive {
 
     function __construct($tag) {
         $this->disktag = $tag;
-        $this->redirect_uri = 'https://scfonedrive.github.io';
+        $this->redirect_uri = 'https://fydy.github.io';
         if (getConfig('client_id', $tag) && getConfig('client_secret', $tag)) {
             $this->client_id = getConfig('client_id', $tag);
             $this->client_secret = getConfig('client_secret', $tag);
@@ -732,7 +732,7 @@ class Onedrive {
                 <label><input type="checkbox" name="NT_Drive_custom" onclick="document.getElementById(\'NT_secret\').style.display=(this.checked?\'\':\'none\');">' . getconstStr('CustomIdSecret') . '</label><br>
                 <div id="NT_secret" style="display:none;margin:10px 35px">
                     <a href="https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps" target="_blank">' . getconstStr('GetSecretIDandKEY') . '</a><br>
-                    return_uri(Reply URL):<br>https://scfonedrive.github.io/<br>
+                    return_uri(Reply URL):<br>https://fydy.github.io/<br>
                     client_id:<input type="text" name="NT_client_id" style="width:100%" placeholder="a1b2c345-90ab-cdef-ghij-klmnopqrstuv"><br>
                     client_secret:<input type="text" name="NT_client_secret" style="width:100%"><br>
                 </div>
@@ -742,7 +742,7 @@ class Onedrive {
                 <label><input type="checkbox" name="CN_Drive_custom" onclick="document.getElementById(\'CN_secret\').style.display=(this.checked?\'\':\'none\');">' . getconstStr('CustomIdSecret') . '</label><br>
                 <div id="CN_secret" style="display:none;margin:10px 35px">
                     <a href="https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps" target="_blank">' . getconstStr('GetSecretIDandKEY') . '</a><br>
-                    return_uri(Reply URL):<br>https://scfonedrive.github.io/<br>
+                    return_uri(Reply URL):<br>https://fydy.github.io/<br>
                     client_id:<input type="text" name="CN_client_id" style="width:100%" placeholder="a1b2c345-90ab-cdef-ghij-klmnopqrstuv"><br>
                     client_secret:<input type="text" name="CN_client_secret" style="width:100%"><br>
                 </div>
@@ -754,7 +754,7 @@ class Onedrive {
             </div>
         </div>
         <br>';
-        if ($_SERVER['language']=='zh-cn') $html .= '你要理解 scfonedrive.github.io 是github上的静态网站，<br><font color="red">除非github真的挂掉</font>了，<br>不然，稍后你如果<font color="red">连不上</font>，请检查你的运营商或其它“你懂的”问题！<br>';
+        if ($_SERVER['language']=='zh-cn') $html .= '你要理解 fydy.github.io 是github上的静态网站，<br><font color="red">除非github真的挂掉</font>了，<br>不然，稍后你如果<font color="red">连不上</font>，请检查你的运营商或其它“你懂的”问题！<br>';
         $html .='
         <input type="submit" value="' . getconstStr('Submit') . '">
     </form>
